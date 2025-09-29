@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int Detik, Normal, Warna;
+    cout<<"Detik = ";
+    cin >> Detik;
+    Normal = Detik - 24;
+    Warna = Normal % (20 + 3 + 80);
+    if(1 <= Warna && Warna <= 20){
+        cout<<"Lampu Hijau";
+    }
+    else if(21 <=  Warna && Warna <= 23){
+        cout<<"Lampu Kuning";
+    }
+    else{
+        cout<<"Lampu Merah";
+    }
+
+    return 0;
+
+
+}
